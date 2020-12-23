@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "NanumGothic";
+  src: local(NanumGothic);
+  src:url(NanumGothic.eot);
+  src: local(@), url(NanumGothic.woff) format('woff');
+}
+
+body {
+  margin:0;
+  margin-bottom: 30px;
+}
+
+#homekey {
+  color:black;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: left;
+  border-bottom: 1px solid black;
+  margin: 0;
+  padding: 20px;
+}
+
+#ulist {
+  border-right: 1px solid black;
+  width: 130px;
+  margin: 0;
+  padding: 33px;
+  font-size: 25px;
+}
+
+#intro{
+  padding: 15px;
+  padding-left: 0;
+}
+
+#line {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+#olist{
+  padding-left: 20px;
+  padding-bottom: 10px;
+  margin: 0;
+  border-bottom: 3px dashed green;
+  font-size: 25px;
+}
+
+p{
+  font-family: "나눔고딕", "NanumGothic", serif;
+  font-size: 20px;
+  line-height: 170%;
+}
+
+#info{
+  border: 1px solid black;
+  border-radius: 1em;
+  font-size: 20px;
+  text-align: right;
+  padding:15px;
+  margin: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#curriculum{
+  line-height: 150%;
+  padding-left: 25px;
+}
+
+a{
+  color: green;
+}
