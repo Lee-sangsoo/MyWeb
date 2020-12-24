@@ -74,3 +74,9 @@ p{
 a{
   color: green;
 }
+
+.modchanger{
+  text-align: right;
+  margin-right: 30px;
+  margin-top: 20px;
+}
