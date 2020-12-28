@@ -5,10 +5,10 @@
     <link rel="stylesheet" href="main_style.css">
   </head>
   <body>
-    <h1><a href="main.html" id="homekey">이광민</a></h1>
+    <h1><a href="https://lee-sangsoo.github.io/MyWeb/" id="homekey">이광민</a></h1>
     <div id="line">
     <ul id="ulist">
-      <li><a href="index.html">기본 정보</a></li>
+      <li><a href="https://lee-sangsoo.github.io/MyWeb/">기본 정보</a></li>
       <li>소속</li>
       <li>수상</li>
     </ul>
@@ -58,12 +58,22 @@
             target.style.color='white';
             document.querySelector('#homekey').style.color='white';
             this.value = '화이트 모드';
+
+            var alist = document.querySelectorAll('a');
+            for(var i = 0; i<alist.length; i++){
+              alist[i].style.color = 'powderblue';
+            }
           }
           else{
             target.style.backgroundColor='white';
             target.style.color='black';
             document.querySelector('#homekey').style.color='black';
             this.value = '다크 모드';
+
+            var alist = document.querySelectorAll('a');
+            for(var i = 0; i<alist.length; i++){
+              alist[i].style.color = 'gray';
+            }
           }
         ">
       </div>
