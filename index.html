@@ -47,19 +47,24 @@
     -->
     </div>
     </div>
-      <p id="info">PhoneNumber : 010-4280-9497 <br>
+      <p id="info">PhoneNumber : 010-4***-**** <br>
         Email : dltkdtn56@naver.com <br>
       </p>
       <div class="modchanger">
-        <input type="button" value="화이트 모드" onclick="
-          document.querySelector('body').style.backgroundColor='white';
-          document.querySelector('body').style.color='black';
-          document.querySelector('#homekey').style.color='black';
-        ">
         <input type="button" value="다크 모드" onclick="
-          document.querySelector('body').style.backgroundColor='#1e1f21';
-          document.querySelector('body').style.color='white';
-          document.querySelector('#homekey').style.color='white';
+          var target = document.querySelector('body');
+          if(this.value === '다크 모드'){
+            target.style.backgroundColor='#1e1f21';
+            target.style.color='white';
+            document.querySelector('#homekey').style.color='white';
+            this.value = '화이트 모드';
+          }
+          else{
+            target.style.backgroundColor='white';
+            target.style.color='black';
+            document.querySelector('#homekey').style.color='black';
+            this.value = '다크 모드';
+          }
         ">
       </div>
   </body>
