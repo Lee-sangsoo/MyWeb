@@ -3,6 +3,33 @@
     <meta charset="utf-8">
     <title>이탐생</title>
     <link rel="stylesheet" href="main_style.css">
+    <script>
+      function modHandler(self){
+        var target = document.querySelector('body');
+        if(this.value === '다크 모드'){
+          target.style.backgroundColor='#1e1f21';
+          target.style.color='white';
+          document.querySelector('#homekey').style.color='white';
+          this.value = '화이트 모드';
+
+          var alist = document.querySelectorAll('a');
+          for(var i = 0; i<alist.length; i++){
+            alist[i].style.color = 'powderblue';
+          }
+        }
+        else{
+          target.style.backgroundColor='white';
+          target.style.color='black';
+          document.querySelector('#homekey').style.color='black';
+          this.value = '다크 모드';
+
+          var alist = document.querySelectorAll('a');
+          for(var i = 0; i<alist.length; i++){
+            alist[i].style.color = 'gray';
+          }
+        }
+      }
+    </script>
   </head>
   <body>
     <h1><a href="https://lee-sangsoo.github.io/MyWeb/" id="homekey">이광민</a></h1>
@@ -52,29 +79,7 @@
       </p>
       <div class="modchanger">
         <input type="button" value="다크 모드" onclick="
-          var target = document.querySelector('body');
-          if(this.value === '다크 모드'){
-            target.style.backgroundColor='#1e1f21';
-            target.style.color='white';
-            document.querySelector('#homekey').style.color='white';
-            this.value = '화이트 모드';
-
-            var alist = document.querySelectorAll('a');
-            for(var i = 0; i<alist.length; i++){
-              alist[i].style.color = 'powderblue';
-            }
-          }
-          else{
-            target.style.backgroundColor='white';
-            target.style.color='black';
-            document.querySelector('#homekey').style.color='black';
-            this.value = '다크 모드';
-
-            var alist = document.querySelectorAll('a');
-            for(var i = 0; i<alist.length; i++){
-              alist[i].style.color = 'gray';
-            }
-          }
+          modHandler(this);
         ">
       </div>
   </body>
