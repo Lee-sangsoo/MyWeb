@@ -6,11 +6,11 @@
     <script>
       function modHandler(self){
         var target = document.querySelector('body');
-        if(this.value === '다크 모드'){
+        if(self.value === '다크 모드'){
           target.style.backgroundColor='#1e1f21';
           target.style.color='white';
           document.querySelector('#homekey').style.color='white';
-          this.value = '화이트 모드';
+          self.value = '화이트 모드';
 
           var alist = document.querySelectorAll('a');
           for(var i = 0; i<alist.length; i++){
@@ -21,7 +21,7 @@
           target.style.backgroundColor='white';
           target.style.color='black';
           document.querySelector('#homekey').style.color='black';
-          this.value = '다크 모드';
+          self.value = '다크 모드';
 
           var alist = document.querySelectorAll('a');
           for(var i = 0; i<alist.length; i++){
