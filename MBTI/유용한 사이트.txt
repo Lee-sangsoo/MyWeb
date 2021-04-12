@@ -1,0 +1,23 @@
+https://getbootstrap.com/ -> 완성된 CSS 사용 가능
+
+https://pixabay.com/ -> 무료 이미지
+
+https://app.netlify.com/ -> 무료 호스팅 사이트
+
+https://www.addthis.com/ -> SNS 공유 기능 간단 추가
+
+광고 붙이기 -> 구글 애드센스, 카카오 애드핏
+
+https://adfit.kakao.com/ -> 카카오 애드핏
+
+https://searchadvisor.naver.com/ -> 네이버 웹 마스터
+	웹 마스터 -> 소유 확인, robots.txt (네이버 크롤러 = 예티)
+	사이트에서 -> 우측 상단 (웹마스터 도구)
+		사이트 선택
+		검증 -> robots.txt -> 간단 생성으로 만들고 폴더에 넣어주고 수집 요청
+
+https://www.xml-sitemaps.com/ -> xml 파일 만들기
+	만들고 -> 폴더에 넣고 -> 웹 마스터에서
+	요청 -> 사이트맵 제출 -> URL/sitemap.xml 추가
+	하루 이틀정도가 걸린다.
+
